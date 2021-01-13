@@ -49,7 +49,7 @@ class App extends Component {
 
     // Subscribe to accounts change
     wallet.on("accountsChanged", (accounts) => {
-      window.location.href=window.location.href;
+      window.location.reload(true);
     });
 
     // Subscribe to chainId change
@@ -149,7 +149,7 @@ class App extends Component {
 
   render() {
 
-    if (!this.state.claimed) {
+    if (this.state.claimed) {
       return (
         <div className="bg-tap_blue min-h-screen bg-gray-100">
           {this.header}
@@ -186,7 +186,6 @@ class App extends Component {
                     size: "large",
                     text: "I just claimed " + process.env.REACT_APP_BONUS_GIVEAWAY_AMOUNT + " FREE TAP Tokens from @tapmydata as part of the #opendataeconomy. Claim yours now at",
                     hashtags: "tapmydata",
-                    size: "large" 
                   }
                 } />
                 </div>

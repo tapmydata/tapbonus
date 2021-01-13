@@ -1,4 +1,3 @@
-import { TransactionDescription } from "ethers/lib/utils";
 import React from "react"
 
 export class ClaimBonus extends React.Component {
