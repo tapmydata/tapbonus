@@ -77,7 +77,7 @@ class App extends Component {
     this.setState({baseTokenContract: baseTokenContract});
     this.getBalance("baseTokenBalance", baseTokenContract);
 
-    if (!process.env.REACT_APP_ALLOW_MULTIPLE_CLAIMS) {
+    if (process.env.REACT_APP_ALLOW_MULTIPLE_CLAIMS !== 'true') {
       // Get the filter (the second null could be omitted)
       const filter = baseTokenContract.filters.Transfer(process.env.REACT_APP_BONUS_CONTRACT_ADDRESS, account);
 
@@ -87,7 +87,7 @@ class App extends Component {
       if (logs.length > 0) {
         this.setState({previouslyClaimed: true});
       }
-    }
+   }
 
     // Print out all the values:
     /*logs.forEach((log) => {
