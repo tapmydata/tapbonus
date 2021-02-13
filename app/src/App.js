@@ -149,7 +149,7 @@ class App extends Component {
 
   render() {
 
-    if (this.state.claimed) {
+    if (1===1) {
       return (
         <div className="bg-tap_blue min-h-screen bg-gray-100">
           {this.header}
@@ -158,40 +158,21 @@ class App extends Component {
               <div className="bg-white rounded-lg shadow px-5 py-6 sm:px-6">
                   
               <div className="max-w-7xl mx-auto py-12 px-4 text-center">
-                <p className="text-center text-base font-semibold uppercase text-gray-600 tracking-wider">
-                  Congratulations Your {process.env.REACT_APP_BASE_TOKEN_SYMBOL} Tokens have arrived!
-                </p>
-                <div className="mx-auto p-8 content-center text-center">
-                  <img className="mx-auto max-h-40" src="images/coins.png" alt="Your freshly minted TAP coin" />
-                </div>
-                <div>
-                  <p>Balance: <strong>{Number(this.state.baseTokenBalance).toFixed(2)}</strong></p>
-                </div>
-              </div>
-
               <h1 className="text-center text-xl font-semibold uppercase text-gray-600 tracking-wider">
-                Things to do now:
+                The TAP Giveaway is now closed
               </h1>
-
-              <div className="flex flex-wrap content-center text-center twitter mt-8">
-                <p className="mx-auto clear-right">1. Show your support and help promote {process.env.REACT_APP_BASE_TOKEN_SYMBOL} by sending a Tweet</p>
               </div>
 
-              <div className="flex flex-wrap content-center text-center twitter mt-6">
-                
-              <Share 
-                url="https://giveaway.tapmydata.com"
-                options={
-                  { 
-                    size: "large",
-                    text: "I just claimed " + process.env.REACT_APP_BONUS_GIVEAWAY_AMOUNT + " FREE TAP Tokens from @tapmydata as part of the #opendataeconomy. Claim yours now at",
-                    hashtags: "tapmydata",
-                  }
-                } />
-                </div>
+              <p className="text-center text-m pb-8 font-semibold uppercase text-gray-600 tracking-wider">
+                Watch out for more opportunities to get involved on our official channels.
+              </p>
+
+              <h2 className="text-center text-xl font-semibold uppercase text-gray-600 tracking-wider">
+                Things to do now:
+              </h2>
 
               <div className="flex flex-wrap content-center text-center twitter mt-8">
-                <p className="mx-auto clear-right">2. Stake your {process.env.REACT_APP_BASE_TOKEN_SYMBOL} Tokens on the official Uniswap Pool</p>
+                <p className="mx-auto clear-right">1. Stake your {process.env.REACT_APP_BASE_TOKEN_SYMBOL} Tokens on the official Uniswap Pool</p>
               </div>
 
               <div className="flex flex-wrap content-center text-center twitter mt-6">
@@ -199,7 +180,7 @@ class App extends Component {
               </div>
 
               <div className="flex flex-wrap content-center text-center twitter mt-8">
-                <p className="mx-auto clear-right">3. Join the {process.env.REACT_APP_BASE_TOKEN_NAME} conversation on Telegram</p>
+                <p className="mx-auto clear-right">2. Join the {process.env.REACT_APP_BASE_TOKEN_NAME} conversation on Telegram</p>
               </div>
 
               <div className="flex flex-wrap content-center text-center twitter mt-6">
@@ -207,7 +188,7 @@ class App extends Component {
               </div>
 
               <div className="flex flex-wrap content-center text-center twitter mt-8">
-                <p className="mx-auto clear-right">4. Download Tapmydata on the App Stores</p>
+                <p className="mx-auto clear-right">3. Download Tapmydata on the App Stores</p>
               </div>
 
               <div className="grid gap-0.5 grid-cols-6">
